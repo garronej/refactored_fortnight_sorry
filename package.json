@@ -1,10 +1,10 @@
 {
-    "name": "#{REPO_NAME}#",
+    "name": "refactored_fortnight_sorry",
     "version": "0.0.0",
-    "description": "#{DESC}#",
+    "description": "yes sorry",
     "repository": {
         "type": "git",
-        "url": "git://github.com/#{USER_OR_ORG}#/#{REPO_NAME}#.git"
+        "url": "git://github.com/garronej/refactored_fortnight_sorry.git"
     },
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -14,7 +14,7 @@
         "test": "npm run test:node && npm run test:deno",
         "tsc": "npx tsc",
         "denoify": "npx denoify",
-        "cdn:bundle:.js": "simplifyify dist/index.js -s #{REPO_NAME}# -o dist/bundle.js --debug --bundle",
+        "cdn:bundle:.js": "simplifyify dist/index.js -s refactored_fortnight_sorry -o dist/bundle.js --debug --bundle",
         "cdn:bundle:.min.js": "terser dist/bundle.js -cmo dist/bundle.min.js",
         "cdn:bundle": "npm run cdn:bundle:.js && npm run cdn:bundle:.min.js",
         "cdn:esm": "tsc -p tsconfig.esm.json",
@@ -24,7 +24,7 @@
         "enable_short_import_path:deno": "npm run build && npx denoify_enable_short_deno_import_path",
         "clean": "rm -rf dist deno_dist node_modules mod.ts"
     },
-    "author": "u/#{USER_OR_ORG}#",
+    "author": "u/garronej",
     "license": "MIT",
     "files": [
         "/dist/*.{d.ts,js,js.map}",
@@ -34,7 +34,7 @@
         "/src/tools/"
     ],
     "keywords": [],
-    "homepage": "https://github.com/#{USER_OR_ORG}#/#{REPO_NAME}#",
+    "homepage": "https://github.com/garronej/refactored_fortnight_sorry",
     "devDependencies": {
         "typescript": "^3.9.0",
         "@types/node": "^10.0.0",
